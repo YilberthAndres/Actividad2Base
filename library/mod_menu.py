@@ -1,10 +1,12 @@
 from library.mod_limpiar import *
+from library.mod_empleados import *
+from library.class_empleado import *
 
 
 def opciones():
     op = 0
     
-   
+    E1 = Empleado()
     while(op < 1 or op > 3):
         print("             ACTIVIDAD 2        ")
         print("")
@@ -23,6 +25,7 @@ def opciones():
         limpiar_pantalla()
         op = 0
         while(op < 1 or op > 3):
+            
             print("             MENU PERSONAS        ")
             print("")
             print("")
@@ -36,11 +39,23 @@ def opciones():
 
             if(op < 1 or op > 3):
                 print("Por favor elija una opcion entre 1 y 3")
-
+            
+            if(op == 1):
+              op = 0
+              proceso(1)
+            if(op == 2):
+              op = 0
+              proceso(2)
+            if(op == 3):
+              op = 0
+              proceso(3)
+                
+            
     if (op == 2):
-        limpiar_pantalla()
+        
         op = 0
         while(op < 1 or op > 3):
+            limpiar_pantalla()
             print("             MENU EMPLEADOS       ")
             print("")
             print("")
