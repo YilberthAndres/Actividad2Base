@@ -39,17 +39,7 @@ def opciones():
 
             if(op < 1 or op > 3):
                 print("Por favor elija una opcion entre 1 y 3")
-            
-            if(op == 1):
-              op = 0
-              proceso(1)
-            if(op == 2):
-              op = 0
-              proceso(2)
-            if(op == 3):
-              op = 0
-              proceso(3)
-                
+                          
             
     if (op == 2):
         
@@ -69,4 +59,13 @@ def opciones():
 
             if(op < 1 or op > 3):
                 print("Por favor elija una opcion entre 1 y 3")
-
+                
+            if(op == 1): 
+              op = 0
+              proceso(1)
+            if(op == 2):
+              op = 0
+              proceso(2)
+            if(op == 3):
+              op = 0
+              proceso(3)
