@@ -15,7 +15,7 @@ class Empleado():
       #print(self.__listarPersona, '/n')
         
         for i in self.__listarEmpleado:
-           print(f"Empleado de nombre {i[1]} {i[2]} cedula {i[0]} con telefono {i[3]} gana {i[4]}")
+           print(f"El empleado de nombre {i[1]} {i[2]} con cedula {i[0]} y telefono {i[3]} gana {i[4]}")
            print("")
         
         input(f"Prescione cualquier tecla para continuar...")
