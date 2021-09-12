@@ -1,7 +1,7 @@
+from library.mod_nombre import *
 from library.mod_limpiar import *
 from library.mod_empleados import *
 from library.class_empleado import *
-from library.mod_persona import *
 
 
 
@@ -27,14 +27,14 @@ def opciones():
         limpiar_pantalla()
         op = 0
         while(op < 1 or op > 3):
-            
-            print("             MENU PERSONAS        ")
-            print("")
-            print("")
-            print("1............Agregar Persona.")
-            print("2............Eliminar Persona.")
-            print("3............Mostrar Personas")
-            print("4............Salir")
+            print("------------------------")
+            print("|     MENU PERSONAS    |")
+            print("| 1. Agregar Persona.  |")
+            print("| 2. Eliminar Persona. |")
+            print("| 3. Mostrar Personas  |")
+            print("| 4. Salir             |")
+            print("------------------------")
+
             print("")
             op = int(input("Que opcion elijes: "))
             print("")
@@ -45,8 +45,14 @@ def opciones():
             if(op == 1):
               op = 0
               cargar()
+            if(op == 2):
+              op = 0
+              eliminar()
+            if(op ==3):
+              op = 0
+              mostrarr()
         
-        op = 0
+
         while(op < 1 or op > 3):
             limpiar_pantalla()
             print("             MENU EMPLEADOS       ")
