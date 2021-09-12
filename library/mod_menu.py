@@ -1,6 +1,8 @@
 from library.mod_limpiar import *
 from library.mod_empleados import *
 from library.class_empleado import *
+from library.mod_persona import *
+
 
 
 def opciones():
@@ -8,12 +10,12 @@ def opciones():
     
     E1 = Empleado()
     while(op < 1 or op > 3):
-        print("             ACTIVIDAD 2        ")
-        print("")
-        print("")
-        print("1............Menu Personas.")
-        print("2............Menu Empleados.")
-        print("3............Salir.")
+        print("----------- -----------")
+        print("|     ACTIVIDAD 2     |")
+        print("| 1  Menu Personas.   |")
+        print("| 2  Menu Empleados.  |")
+        print("| 3. Salir.           |")
+        print("-----------------------")
         print("")
         op = int(input("Que opcion elijes: "))
         print("")
@@ -40,8 +42,9 @@ def opciones():
             if(op < 1 or op > 3):
                 print("Por favor elija una opcion entre 1 y 3")
                           
-            
-    if (op == 2):
+            if(op == 1):
+              op = 0
+              cargar()
         
         op = 0
         while(op < 1 or op > 3):
