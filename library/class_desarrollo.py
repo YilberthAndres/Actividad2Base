@@ -13,7 +13,7 @@ class Desarrolloo():
         for i in self.__listapersonas:
             print(f"Nombre: {i[0]} Apellido: {i[1]} Telefono: {i[2]} Codigo: {i[3]} ")
 
-
+            
     
     def eliminarpersona(self):
         borrar = False
