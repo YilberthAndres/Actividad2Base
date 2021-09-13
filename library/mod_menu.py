@@ -4,11 +4,9 @@ from library.mod_empleados import *
 from library.class_empleado import *
 
 
-
-
 def opciones():
     op = 0
-    salir = False
+    salir = False 
     
     E1 = Empleado()
     while(op < 1 or op > 3):
@@ -54,6 +52,7 @@ def opciones():
               op = 0
               mostrarr()
             if(op == 4):
+
               op= 0
               opciones()
           
