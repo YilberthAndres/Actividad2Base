@@ -52,9 +52,10 @@ def opciones():
               op = 0
               mostrarr()
 
-
+    if(op == 2):
+        limpiar_pantalla()
+        op = 0
         while(op < 1 or op > 3):
-            limpiar_pantalla()
             print("             MENU EMPLEADOS       ")
             print("")
             print("")
