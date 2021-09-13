@@ -5,8 +5,10 @@ from library.class_empleado import *
 
 
 
+
 def opciones():
     op = 0
+    salir = False
     
     E1 = Empleado()
     while(op < 1 or op > 3):
@@ -26,7 +28,7 @@ def opciones():
     if (op == 1):
         limpiar_pantalla()
         op = 0
-        while(op < 1 or op > 3):
+        while(op < 1 or op > 4):
             print("------------------------")
             print("|     MENU PERSONAS    |")
             print("| 1. Agregar Persona.  |")
@@ -39,8 +41,8 @@ def opciones():
             op = int(input("Que opcion elijes: "))
             print("")
 
-            if(op < 1 or op > 3):
-                print("Por favor elija una opcion entre 1 y 3")
+            if(op < 1 or op > 4):
+                print("Por favor elija una opcion entre 1 y 4")
                           
             if(op == 1):
               op = 0
@@ -51,11 +53,15 @@ def opciones():
             if(op ==3):
               op = 0
               mostrarr()
+            if(op == 4):
+              op= 0
+              opciones()
+          
 
     if(op == 2):
         limpiar_pantalla()
         op = 0
-        while(op < 1 or op > 3):
+        while(op < 1 or op > 4):
             print("             MENU EMPLEADOS       ")
             print("")
             print("")
@@ -67,8 +73,8 @@ def opciones():
             op = int(input("Que opcion elijes: "))
             print("")
 
-            if(op < 1 or op > 3):
-                print("Por favor elija una opcion entre 1 y 3")
+            if(op < 1 or op > 4):
+                print("Por favor elija una opcion entre 1 y 4")
 
             if(op == 1): 
               op = 0
@@ -79,4 +85,9 @@ def opciones():
             if(op == 3):
               op = 0
               proceso(3)
+            if(op == 4):
+              op = 0
+              opciones()
+    if(op == 3) :
+      exit(0)    
             

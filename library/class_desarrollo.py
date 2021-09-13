@@ -1,4 +1,5 @@
 from library.mod_limpiar import *
+
 class Desarrolloo():
     def __init__(self):
         self.__personas = {}
