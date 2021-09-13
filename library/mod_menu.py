@@ -52,9 +52,7 @@ def opciones():
               op = 0
               mostrarr()
             if(op == 4):
-              op = 0
-              opciones()
-
+                  
     if(op == 2):
         limpiar_pantalla()
         op = 0
