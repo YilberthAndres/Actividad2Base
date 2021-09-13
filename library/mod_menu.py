@@ -6,7 +6,7 @@ from library.class_empleado import *
 
 def opciones():
     op = 0
-    salir = False 
+      
     
     E1 = Empleado()
     while(op < 1 or op > 3):
