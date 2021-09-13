@@ -51,7 +51,7 @@ def opciones():
             if(op ==3):
               op = 0
               mostrarr()
-        
+
 
         while(op < 1 or op > 3):
             limpiar_pantalla()
