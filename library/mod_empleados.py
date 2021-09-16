@@ -10,7 +10,7 @@ def proceso(op):
   if(op == 1):
       while(cont):
         print("")
-        print("           LLENAR DATOS DEL NUEVO EMPLEADO")
+        print("LLENAR DATOS DEL NUEVO EMPLEADO")
         print("")
         ce = input("Ingrese la cedula: "  )
         no = input("Ingrese el nombre: "  )

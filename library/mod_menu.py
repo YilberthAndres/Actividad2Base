@@ -54,6 +54,7 @@ def opciones():
             if(op == 4):
 
               op= 0
+              limpiar_pantalla()
               opciones()
           
 
@@ -61,13 +62,15 @@ def opciones():
         limpiar_pantalla()
         op = 0
         while(op < 1 or op > 4):
-            print("             MENU EMPLEADOS       ")
-            print("")
-            print("")
-            print("1............Agregar Empleado.")
-            print("2............Eliminar Empleado.")
-            print("3............Mostrar Empleados.")
-            print("4............Salir.")
+          
+            print("------------------------")
+            print("|     MENU EMPLEADOS    |")
+            print("| 1. Agregar Empleado.  |")
+            print("| 2. Eliminar Empleado. |")
+            print("| 3. Mostrar Empleado.  |")
+            print("| 4. Salir              |")
+            print("-------------------------")
+
             print("")
             op = int(input("Que opcion elijes: "))
             print("")
@@ -85,6 +88,7 @@ def opciones():
               op = 0
               proceso(3)
             if(op == 4):
+              limpiar_pantalla()
               op = 0
               opciones()
     if(op == 3) :
